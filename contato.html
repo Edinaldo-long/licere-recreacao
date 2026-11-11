@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato, Orçamentos &amp; Trabalhe na Licere | Licere Recreação e Lazer</title>
+  <meta name="description" content="Solicite orçamento de monitoria, aluguel de brinquedos, consultoria e eventos, ou envie seu cadastro para trabalhar com a equipe Licere em Santos e litoral paulista.">
+  <link rel="icon" type="image/jpeg" href="images/logo-mascote.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a href="#conteudo" class="skip-link">Pular para o conteúdo principal</a>
+  <div class="page-bg"></div>
+
+  <header class="header" id="header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">
+        <span class="logo-avatar">
+          <img src="images/logo-mascote.jpg" alt="Mascote golfinho da Licere Recreação">
+        </span>
+        <span class="logo-text">
+          <span class="logo-script">Licere</span>
+          <span class="logo-sub">Recreação &amp; Lazer</span>
+        </span>
+      </a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="nav" aria-label="Navegação principal">
+        <a href="index.html">Início</a>
+        <a href="sobre.html">Quem Somos</a>
+        <a href="servicos.html">Serviços &amp; Cursos</a>
+        <a href="galeria.html">Galeria &amp; Colorir</a>
+        <a href="contato.html?aba=trabalhe">Trabalhe na Licere</a>
+        <a href="contato.html" class="nav-cta active" aria-current="page">Orçamento</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Fale com Carmen L. Menezes</p>
+        <h1>Orçamentos, Cursos &amp; Trabalhe na Licere</h1>
+        <p class="lead">Escolha abaixo se deseja solicitar uma proposta para seu evento/hotel ou preencher seu cadastro no nosso banco de talentos para atuar como monitor(a).</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:20px;">
+      <div class="container contact-grid">
+        <div class="form-card" data-tabs id="contactTabs">
+          <div class="tabs-bar" role="tablist" aria-label="Escolha o tipo de atendimento">
+            <button class="tab-btn active" type="button" role="tab" aria-selected="true" data-tab="orcamento" id="tab-orcamento" aria-controls="panel-orcamento">Solicitar Orçamento / Cursos</button>
+            <button class="tab-btn" type="button" role="tab" aria-selected="false" data-tab="trabalhe" id="tab-trabalhe" aria-controls="panel-trabalhe">Trabalhe na Licere</button>
+          </div>
+
+          <div class="tab-panel" role="tabpanel" data-panel="orcamento" id="panel-orcamento" aria-labelledby="tab-orcamento">
+            <form class="form" id="contactForm">
+              <label>Nome completo *
+                <input type="text" name="nome" required placeholder="Seu nome">
+              </label>
+              <label>E-mail *
+                <input type="email" name="email" required placeholder="voce@email.com">
+              </label>
+              <label>Telefone / WhatsApp *
+                <input type="tel" name="telefone" required placeholder="(13) 98114-3431">
+              </label>
+              <label>Serviço de interesse *
+                <select name="tipo" required>
+                  <option value="">Selecione</option>
+                  <option>Monitoria em Hotel, Resort, Clube ou Condomínio</option>
+                  <option>Aluguel de Brinquedos &amp; Espaço Kids</option>
+                  <option>Animação de Festa Infantil ou Evento</option>
+                  <option>Evento Empresarial / Confraternização</option>
+                  <option>Decoração com Balões</option>
+                  <option>Consultoria na Área de Lazer</option>
+                  <option>Inscrição / Interesse em Curso ou Palestra</option>
+                </select>
+              </label>
+              <label>Cidade / Local do evento
+                <input type="text" name="cidade" placeholder="Ex.: Santos, Guarujá, Ilhabela...">
+              </label>
+              <label>Data prevista
+                <input type="date" name="data">
+              </label>
+              <label class="full">Público estimado e faixa etária
+                <input type="text" name="publico" placeholder="Ex.: 40 crianças de 4 a 11 anos + adultos">
+              </label>
+              <label class="full">Detalhes do que precisa
+                <textarea name="mensagem" rows="4" placeholder="Conte os horários desejados, se precisa de brinquedos, balões, babás para menores de 3 anos ou programação temática."></textarea>
+              </label>
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary">Preparar envio do pedido</button>
+              </div>
+              <div class="form-result" id="formOk" hidden>
+                <h4>Pedido preparado com sucesso!</h4>
+                <p id="formSummary"></p>
+                <div class="form-result-links">
+                  <a href="https://api.whatsapp.com/send?phone=5513981143431" target="_blank" rel="noopener noreferrer" id="formWaLink" class="btn btn-whatsapp btn-sm">Enviar agora pelo WhatsApp</a>
+                  <a href="mailto:carmen.licere@yahoo.com.br" id="formMailLink" class="btn btn-ghost btn-sm">Enviar por E-mail</a>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="tab-panel" role="tabpanel" data-panel="trabalhe" id="panel-trabalhe" aria-labelledby="tab-trabalhe" hidden>
+            <p style="color:var(--muted); margin-bottom:18px; font-size:15px;">Preencha seus dados para fazer parte do banco de talentos da <strong>Licere Recreação</strong> em férias escolares, feriados prolongados e finais de semana.</p>
+            <form class="form" id="talentForm">
+              <label>Nome completo *
+                <input type="text" name="nome" required placeholder="Seu nome completo">
+              </label>
+              <label>Idade *
+                <input type="number" name="idade" min="16" max="80" required placeholder="Ex.: 22">
+              </label>
+              <label>Cidade / Bairro *
+                <input type="text" name="cidade" required placeholder="Ex.: Santos / Gonzaga">
+              </label>
+              <label>WhatsApp / Celular *
+                <input type="tel" name="whatsapp" required placeholder="(13) 90000-0000">
+              </label>
+              <label>E-mail *
+                <input type="email" name="email" required placeholder="voce@email.com">
+              </label>
+              <label>Formação / Curso &amp; Instituição *
+                <input type="text" name="formacao" required placeholder="Ex.: Ed. Física - UNIMES / Turismo / Pedagogia">
+              </label>
+
+              <div class="field-group full">
+                <span>Disponibilidade para trabalhar:</span>
+                <div class="checks-inline">
+                  <label><input type="checkbox" name="disponibilidade" value="Finais de semana"> Finais de semana</label>
+                  <label><input type="checkbox" name="disponibilidade" value="Férias escolares"> Férias escolares</label>
+                  <label><input type="checkbox" name="disponibilidade" value="Feriados prolongados"> Feriados prolongados</label>
+                  <label><input type="checkbox" name="disponibilidade" value="Todos os dias"> Todos os dias</label>
+                </div>
+              </div>
+
+              <label>Disponibilidade para viajar?
+                <select name="viajar">
+                  <option value="Sim">Sim</option>
+                  <option value="Não">Não</option>
+                </select>
+              </label>
+              <label>Sabe nadar?
+                <select name="nadar">
+                  <option value="Sim">Sim</option>
+                  <option value="Não">Não</option>
+                </select>
+              </label>
+              <label>Domina pintura facial?
+                <select name="pintura">
+                  <option value="Sim">Sim</option>
+                  <option value="Não">Não</option>
+                </select>
+              </label>
+              <label>Faz escultura com balões?
+                <select name="baloes">
+                  <option value="Sim">Sim</option>
+                  <option value="Não">Não</option>
+                </select>
+              </label>
+
+              <label class="full">Experiências em recreação e idiomas (inglês / espanhol / outros)
+                <textarea name="experiencia" rows="4" placeholder="Conte sua experiência com crianças, adultos ou terceira idade, registro no CREF (se tiver) e nível em outros idiomas."></textarea>
+              </label>
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary">Gerar ficha de candidatura</button>
+              </div>
+              <div class="form-result" id="talentOk" hidden>
+                <h4>Ficha de candidato gerada!</h4>
+                <p id="talentSummary"></p>
+                <div class="form-result-links">
+                  <a href="https://api.whatsapp.com/send?phone=5513981143431" target="_blank" rel="noopener noreferrer" id="talentWaLink" class="btn btn-whatsapp btn-sm">Enviar candidatura pelo WhatsApp</a>
+                  <a href="mailto:carmen.licere@yahoo.com.br" id="talentMailLink" class="btn btn-ghost btn-sm">Enviar por E-mail (com currículo anexo)</a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <aside class="contact-aside">
+          <div class="aside-item">
+            <h3>WhatsApp Direto</h3>
+            <a href="https://api.whatsapp.com/send?phone=5513981143431" target="_blank" rel="noopener noreferrer">(13) 98114-3431</a>
+          </div>
+          <div class="aside-item">
+            <h3>Telefone Fixo</h3>
+            <a href="tel:+551333213189">(13) 3321-3189</a>
+          </div>
+          <div class="aside-item">
+            <h3>E-mail Oficial</h3>
+            <a href="mailto:carmen.licere@yahoo.com.br">carmen.licere@yahoo.com.br</a>
+          </div>
+          <div class="aside-item">
+            <h3>Redes Sociais</h3>
+            <a href="https://www.facebook.com/licererecreacao/" target="_blank" rel="noopener noreferrer">facebook.com/licererecreacao</a>
+          </div>
+          <div class="aside-item" style="border-bottom:0; padding-bottom:0;">
+            <h3>Base &amp; Área de Atuação</h3>
+            <p style="font-size:14.5px; color:var(--muted);">Sede em <strong>Santos/SP</strong> com atendimento em toda a Baixada Santista, Guarujá, Ilhabela, Litoral Norte/Sul e eventos ou consultorias em outras regiões sob consulta.</p>
+          </div>
+          <img src="images/fotos/equipe-monitores-camiseta.jpg" alt="Equipe de monitoras Licere com camiseta oficial do golfinho">
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="logo">
+          <span class="logo-avatar">
+            <img src="images/logo-mascote.jpg" alt="Mascote golfinho da Licere">
+          </span>
+          <span class="logo-text">
+            <span class="logo-script">Licere</span>
+            <span class="logo-sub">Recreação &amp; Lazer</span>
+          </span>
+        </a>
+        <p>Desde 2007 levando monitoria especializada, aluguel de brinquedos, consultoria e cursos para hotéis, clubes, condomínios e eventos.</p>
+      </div>
+      <div>
+        <h4>Navegação</h4>
+        <a href="index.html">Início</a>
+        <a href="sobre.html">Quem Somos &amp; Proposta</a>
+        <a href="servicos.html">Serviços &amp; Cursos</a>
+        <a href="galeria.html">Galeria &amp; Colorir</a>
+        <a href="contato.html?aba=trabalhe">Trabalhe na Licere</a>
+      </div>
+      <div>
+        <h4>Contato · Santos/SP</h4>
+        <p>Responsável: <strong>Carmen L. Menezes</strong></p>
+        <a href="https://api.whatsapp.com/send?phone=5513981143431" target="_blank" rel="noopener noreferrer">WhatsApp: (13) 98114-3431</a>
+        <a href="tel:+551333213189">Telefone: (13) 3321-3189</a>
+        <a href="mailto:carmen.licere@yahoo.com.br">carmen.licere@yahoo.com.br</a>
+        <a href="https://www.facebook.com/licererecreacao/" target="_blank" rel="noopener noreferrer">Facebook /licererecreacao</a>
+      </div>
+    </div>
+    <div class="copy">&copy; 2007–2026 Licere Recreação e Lazer · Santos e Litoral Paulista · Todos os direitos reservados</div>
+  </footer>
+
+  <a href="https://api.whatsapp.com/send?phone=5513981143431" target="_blank" rel="noopener noreferrer" class="wa-float" aria-label="Falar pelo WhatsApp (13) 98114-3431">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.98.58 3.91 1.67 5.56L2.02 22l4.66-1.74a9.86 9.86 0 0 0 5.36 1.56h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.78 14.08c-.24.68-1.41 1.3-1.95 1.38-.5.07-1.13.1-1.83-.12-.42-.13-.96-.31-1.65-.61-2.91-1.25-4.81-4.18-4.96-4.38-.14-.19-1.18-1.57-1.18-3 0-1.43.75-2.13 1.01-2.42.27-.29.59-.36.79-.36h.57c.18 0 .43-.07.67.51.25.6.84 2.07.92 2.22.07.15.12.32.02.52-.1.19-.15.32-.3.49-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.29.77 1.27 1.65 2.05 1.13 1.01 2.09 1.32 2.38 1.47.29.15.46.12.63-.07.17-.2.74-.86.94-1.15.2-.3.39-.25.66-.15.27.1 1.72.81 2.01.96.3.15.49.22.56.34.07.12.07.7-.17 1.38Z"/></svg>
+    <span>WhatsApp Licere</span>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

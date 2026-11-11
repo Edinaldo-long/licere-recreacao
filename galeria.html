@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeria &amp; Colorir | Licere Recreação e Lazer</title>
+  <meta name="description" content="Veja fotos reais da equipe Licere em hotéis como o Sofitel Guarujá Jequitimar, oficinas aquáticas, aluguel de brinquedos, balões, eventos e baixe os desenhos do golfinho para colorir.">
+  <link rel="icon" type="image/jpeg" href="images/logo-mascote.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a href="#conteudo" class="skip-link">Pular para o conteúdo principal</a>
+  <div class="page-bg"></div>
+
+  <header class="header" id="header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">
+        <span class="logo-avatar">
+          <img src="images/logo-mascote.jpg" alt="Mascote golfinho da Licere Recreação">
+        </span>
+        <span class="logo-text">
+          <span class="logo-script">Licere</span>
+          <span class="logo-sub">Recreação &amp; Lazer</span>
+        </span>
+      </a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="nav" aria-label="Navegação principal">
+        <a href="index.html">Início</a>
+        <a href="sobre.html">Quem Somos</a>
+        <a href="servicos.html">Serviços &amp; Cursos</a>
+        <a href="galeria.html" class="active" aria-current="page">Galeria &amp; Colorir</a>
+        <a href="contato.html?aba=trabalhe">Trabalhe na Licere</a>
+        <a href="contato.html" class="nav-cta">Orçamento</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Acervo Real Licere</p>
+        <h1>Fotos dos nossos hotéis, eventos, brinquedos e treinamentos</h1>
+        <p class="lead">Registros autênticos do acervo histórico da Licere Recreação e Lazer. Filtre por tema ou clique em qualquer foto para ampliar.</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:20px;">
+      <div class="container">
+        <div class="filter-bar" role="group" aria-label="Filtrar fotos por categoria">
+          <button class="filter-btn active" type="button" data-filter="todos" aria-pressed="true">Todas as fotos</button>
+          <button class="filter-btn" type="button" data-filter="hoteis" aria-pressed="false">Hotéis, Praia &amp; Momentos</button>
+          <button class="filter-btn" type="button" data-filter="aquatica" aria-pressed="false">Atividades Aquáticas</button>
+          <button class="filter-btn" type="button" data-filter="eventos" aria-pressed="false">Eventos &amp; Oficinas</button>
+          <button class="filter-btn" type="button" data-filter="brinquedos" aria-pressed="false">Aluguel de Brinquedos</button>
+          <button class="filter-btn" type="button" data-filter="baloes" aria-pressed="false">Decoração com Balões</button>
+          <button class="filter-btn" type="button" data-filter="cursos" aria-pressed="false">Cursos &amp; Palestras</button>
+        </div>
+
+        <p class="gallery-count" id="galleryCount" aria-live="polite">Exibindo fotos reais dos eventos e treinamentos da Licere</p>
+
+        <div class="gallery-grid">
+          <!-- Hotéis, Praia & Momentos -->
+          <figure class="gallery-card" data-category="hoteis">
+            <button class="gallery-trigger" type="button" data-lightbox data-cat-label="Hotéis &amp; Resorts" data-caption="Diversão na piscina do Sofitel Guarujá Jequitimar">
+              <img src="images/fotos/sofitel-jequitimar-piscina-salto.jpg" alt="Monitores e crianças pulando juntos na piscina do Sofitel Guarujá Jequitimar" loading="lazy">
+            </button>
+            <figcaption><span class="gallery-cat">Hotéis &amp; Resorts</span><span class="gallery-title">Salto na piscina — Sofitel Guarujá Jequitimar</span></figcaption>
+          </figure>
+
+          <figure class="gallery-card" data-category="hoteis">
+            <button class="gallery-trigger" type="button" data-lightbox data-cat-label="Hotéis &amp; Resorts" data-caption="Atividades aquáticas temáticas no Sofitel Guarujá Jequitimar">
+              <img src="images/fotos/sofitel-recreacao-piscina.jpg" alt="Monitoras animadas com flutuador e chapéu de personagem na piscina do Sofitel Guarujá" loading="lazy">
+            </button>
+            <figcaption><span class="gallery-cat">Hotéis &amp; Resorts</span><span class="gallery-title">Atividades na água — Sofitel Jequitimar</span></figcaption>
+          </figure>
+
+          <figure class="gallery-card" data-category="hoteis">
+            <button class="gallery-trigger" type="button" data-lightbox data-cat-label="Praia &amp; Lazer" data-caption="Escultura na areia e brincadeiras na praia com monitores Licere">
+              <img src="images/fotos/praia-areia-monitores.jpg" alt="Monitores uniformizados brincando com crianças na areia da praia" loading="lazy">
+            </button>
+            <figcaption><span class="gallery-cat">Praia &amp; Lazer</span><span class="gallery-title">Esculturas e dinâmicas na areia da praia</span></figcaption>
+          </figure>
+
+          <figure class="gallery-card" data-category="hoteis">
+            <button class="gallery-trigger" type="button" data-lightbox data-cat-label="Hotéis &amp; Clubes" data-caption="Jogos de bola na borda da piscina com equipe uniformizada">
+              <img src="images/fotos/piscina-bola-equipe.jpg" alt="Monitores em colete verde da Licere brincando com bolas na borda da piscina" loading="lazy">
+            </button>
+            <figcaption><span class="gallery-cat">Hotéis &amp; Clubes</span><span class="gallery-title">Brincadeiras aquáticas na piscina</span></figcaption>
+          </figure>
+
+          <figure class="gallery-card is-portrait" data-category="hoteis">
+            <button class="gallery-trigger" type="button" data-lightbox data-cat-label="Equipe Licere" data-caption="Monitoras uniformizadas vestindo a camiseta com o golfinho Licere">
+              <img src="images/fotos/equipe-monitores-camiseta.jpg" alt="Três monitoras sorrindo vestindo camiseta verde da Licere Recreação com o golfinho" loading="lazy">
+            </button>
+            <figcaption><span class="gallery-cat">Equipe Licere</span><span class="gallery-title">Equipe de monitoria uniformizada</span></figcaption>
+          </figure>
+
+          <figure class="gallery-card" data-category="hoteis">
+            <button class="gallery-trigger" type="button" data-lightbox data-cat-label="Equipe Licere" data-caption="Equipe posando em frente ao Espaço Kids com pula-pula e bolinhas">
+              <img src="images/fotos/equipe-castelo-espaco-kids.jpg" alt="Quatro monitoras uniformizadas da Licere em frente ao castelo inflável" loading="lazy">
+            </button>
+            <figcaption><span class="gallery-cat">Equipe Licere</span><span class="gallery-title">Equipe pronta no Espaço Kids do hotel</span></figcaption>
+          </figure>
+
+          <figure class="gallery-card" data-category="hoteis">
+            <button class="gallery-trigger" type="button" data-lightbox data-cat-label="Programação Adultos" data-caption="Bingo animado conduzido por monitora Licere em hotel">
+              <img src="images/fotos/bingo-animado-hotel.jpg" alt="Monitora com colar havaiano conduzindo bingo animado no salão do hotel" loading="lazy">
+            </button>
+            <figcaption><span class="gallery-cat">Adultos &amp; Famílias</span><span class="gallery-title">Bingo animado no salão de hóspedes</span></figcaption>
+          </figure>
+
+          <figure class="gallery-card" data-category="hoteis">
+            <button class="gallery-trigger" type="button" data-lightbox data-cat-label="Espaço Kids" data-caption="Brinquedoteca temática com Mercadinho e Casa da Alegria">
+              <img src="images/fotos/espaco-kids-atividades.jpg" alt="Monitora organizando Espaço Kids colorido com casinha e jogo da velha" loading="lazy">
+            </button>
+            <figcaption><span class="gallery-cat">Espaço Kids</span><span class="gallery-title">Brinquedoteca Mercadinho &amp; Casa da Alegria</span></figcaption>
+          </figure>
+
+          <figure class="gallery-card" data-category="hoteis">
+            <button class="gallery-trigger" type="button" data-lightbox data-cat-label="Espaço Kids" data-caption="Implantação e organização de brinquedoteca segura e colorida">
+              <img src="images/fotos/brinquedoteca-casinha-hotel.jpg" alt="Brinquedoteca com casinha, tapete de E.V.A., brinquedos e mesinhas" loading="lazy">
+            </button>
+            <figcaption><span class="gallery-cat">Consultoria &amp; Espaço Kids</span><span class="gallery-title">Brinquedoteca montada para famílias</span></figcaption>
+          </figure>
+
+          <figure class="gallery-card" data-category="hoteis">
+            <button class="gallery-trigger" type="button" data-lightbox data-cat-label="Turismo &amp; Grupos" data-caption="Monitoria em excursões rodoviárias e passeios de lazer">
+              <img src="images/fotos/excursao-lazer-onibus.jpg" alt="Grande grupo de viajantes ao lado de ônibus acompanhados pela equipe Licere" loading="lazy">
+            </button>
+            <figcaption><span class="gallery-cat">Turismo &amp; Grupos</span><span class="gallery-title">Acompanhamento de grupos e excursões</span></figcaption>
+          </figure>
+
+          <figure class="gallery-card" data-category="hoteis">
+            <button class="gallery-trigger" type="button" data-lightbox data-cat-label="Praia &amp; Lazer" data-caption="Monitores da Licere em atividade recreativa de verão na praia">
+              <img src="images/fotos/monitoria-praia-equipe.jpg" alt="Três monitores da Licere em uniforme branco posando na areia da praia com sacolinhas de atividade" loading="lazy">
+            </button>
+            <figcaption><span class="gallery-cat">Praia &amp; Lazer</span><span class="gallery-title">Equipe de verão em recreação na praia</span></figcaption>
+          </figure>
+
+          <!-- Atividades Aquáticas -->
+          <figure class="gallery-card" data-category="aquatica">
+            <button class="gallery-trigger" type="button" data-lightbox data-cat-label="Atividades Aquáticas" data-caption="Hidro-animação em piscina de hotel com professor habilitado">
+              <img src="images/fotos/hidro-lazer-piscina.jpg" alt="Professor da Licere orientando atividade de hidroginástica e lazer na piscina" loading="lazy">
+            </button>
+            <figcaption><span class="gallery-cat">Atividades Aquáticas</span><span class="gallery-title">Hidroginástica e lazer na piscina</span></figcaption>
+          </figure>
+
+          <figure class="gallery-card is-portrait" data-category="aquatica">
+            <button class="gallery-trigger" type="button" data-lightbox data-cat-label="Atividades Aquáticas" data-caption="Turma de oficina aquática fazendo o L de Licere na piscina">
+              <img src="images/fotos/aquatica-turma-piscina.jpg" alt="Grupo de monitores na piscina de clube aquático fazendo o sinal da letra L" loading="lazy">
+            </button>
+            <figcaption><span class="gallery-cat">Atividades Aquáticas</span><span class="gallery-title">Oficina prática em parque aquático</span></figcaption>
+          </figure>
+
+          <figure class="gallery-card" data-category="aquatica">
+            <button class="gallery-trigger" type="button" data-lightbox data-cat-label="Atividades Aquáticas" data-caption="Dinâmica em roda e jogos cooperativos em piscina aquecida">
+              <img src="images/fotos/aquatica-dinamica-natacao.jpg" alt="Participantes do curso formando roda em piscina coberta aquecida" loading="lazy">
+            </button>
+            <figcaption><span class="gallery-cat">Atividades Aquáticas</span><span class="gallery-title">Dinâmicas de grupo na piscina aquecida</span></figcaption>
+          </figure>
+
+          <figure class="gallery-card" data-category="aquatica">
+            <button class="gallery-trigger" type="button" data-lightbox data-cat-label="Atividades Aquáticas" data-caption="Jogos aquáticos noturnos e integração de turma">
+              <img src="images/fotos/aquatica-recreacao-resort.jpg" alt="Turma com toucas verdes e camisetas Licere em atividade noturna na piscina" loading="lazy">
+            </button>
+            <figcaption><span class="gallery-cat">Atividades Aquáticas</span><span class="gallery-title">Aqualudos noturnos com equipe integrada</span></figcaption>
+          </figure>
+
+          <figure class="gallery-card" data-category="aquatica">
+            <button class="gallery-trigger" type="button" data-lightbox data-cat-label="Acampamentos &amp; Natureza" data-caption="Flutuação e passeio ecológico em acampamento educativo">
+              <img src="images/fotos/aquatica-mergulho-passeio.jpg" alt="Grupo de jovens com coletes e máscaras de flutuação em lago arborizado" loading="lazy">
+            </button>
+            <figcaption><span class="gallery-cat">Acampamentos</span><span class="gallery-title">Vivência ecológica e atividades aquáticas</span></figcaption>
+          </figure>
+
+          <!-- Eventos & Oficinas -->
+          <figure class="gallery-card" data-category="eventos">
+            <button class="gallery-trigger" type="button" data-lightbox data-cat-label="Eventos &amp; Festas" data-caption="Festa à fantasia e baladinha noturna conduzida pela Licere">
+              <img src="images/fotos/baladinha-fantasias-noite.jpg" alt="Crianças fantasiadas de princesas e super-heróis celebrando com monitoras" loading="lazy">
+            </button>
+            <figcaption><span class="gallery-cat">Eventos &amp; Festas</span><span class="gallery-title">Noite da fantasia e baladinha kids</span></figcaption>
+          </figure>
+
+          <figure class="gallery-card" data-category="eventos">
+            <button class="gallery-trigger" type="button" data-lightbox data-cat-label="Oficinas Criativas" data-caption="Oficina de confecção e pintura de máscaras de Carnaval">
+              <img src="images/fotos/oficina-mascaras-carnaval.jpg" alt="Monitora da Licere e criança exibindo máscaras coloridas à mão" loading="lazy">
+            </button>
+            <figcaption><span class="gallery-cat">Oficinas Criativas</span><span class="gallery-title">Oficina de máscaras de Carnaval</span></figcaption>
+          </figure>
+
+          <figure class="gallery-card is-portrait" data-category="eventos">
+            <button class="gallery-trigger" type="button" data-lightbox data-cat-label="Oficinas Criativas" data-caption="Oficina de pintura artística para crianças no Espaço Kids">
+              <img src="images/fotos/oficina-pintura-artes.jpg" alt="Crianças e jovens monitores da Licere em mesa de pintura e guache" loading="lazy">
+            </button>
+            <figcaption><span class="gallery-cat">Oficinas Criativas</span><span class="gallery-title">Ateliê infantil de artes e pintura</span></figcaption>
+          </figure>
+
+          <figure class="gallery-card" data-category="eventos">
+            <button class="gallery-trigger" type="button" data-lightbox data-cat-label="Eventos &amp; Festas" data-caption="Pintura facial artística feita pelos monitores em eventos">
+              <img src="images/fotos/eventos-pintura-facial.jpg" alt="Monitora aplicando pintura facial artística ao lado de menino maquiado de leão" loading="lazy">
+            </button>
+            <figcaption><span class="gallery-cat">Eventos &amp; Festas</span><span class="gallery-title">Pintura facial artística para festas</span></figcaption>
+          </figure>
+
+          <figure class="gallery-card" data-category="eventos">
+            <button class="gallery-trigger" type="button" data-lightbox data-cat-label="Eventos Temáticos" data-caption="Interação com personagens gigantes e animação teatral">
+              <img src="images/fotos/eventos-personagens-infantis.jpg" alt="Equipe com fantasias de dragão, cachorrinho, palhaço e bichinhos junto das crianças" loading="lazy">
+            </button>
+            <figcaption><span class="gallery-cat">Eventos Temáticos</span><span class="gallery-title">Personagens vivos e recepção infantil</span></figcaption>
+          </figure>
+
+          <figure class="gallery-card" data-category="eventos">
+            <button class="gallery-trigger" type="button" data-lightbox data-cat-label="Natal &amp; Confraternizações" data-caption="Festa de Natal corporativa e condominial com Papai Noel">
+              <img src="images/fotos/eventos-natal-papai-noel.jpg" alt="Equipe Licere sorrindo ao lado de Papai Noel sob arco de balões verdes e amarelos" loading="lazy">
+            </button>
+            <figcaption><span class="gallery-cat">Datas Comemorativas</span><span class="gallery-title">Natal com Papai Noel e equipe completa</span></figcaption>
+          </figure>
+
+          <figure class="gallery-card" data-category="eventos">
+            <button class="gallery-trigger" type="button" data-lightbox data-cat-label="Equipe em Ação" data-caption="Equipe da Licere animando evento sob arco de balões">
+              <img src="images/fotos/eventos-arco-baloes-equipe.jpg" alt="Seis recreadores uniformizados da Licere em frente a arco colorido de balões" loading="lazy">
+            </button>
+            <figcaption><span class="gallery-cat">Eventos Corporativos</span><span class="gallery-title">Equipe reunida em evento festivo</span></figcaption>
+          </figure>
+
+          <figure class="gallery-card" data-category="eventos">
+            <button class="gallery-trigger" type="button" data-lightbox data-cat-label="Grandes Eventos" data-caption="Gincanas esportivas e recreação em quadra poliesportiva">
+              <img src="images/fotos/eventos-gincana-quadra.jpg" alt="Ginásio poliesportivo cheio com crianças participando de roda com monitores" loading="lazy">
+            </button>
+            <figcaption><span class="gallery-cat">Grandes Eventos</span><span class="gallery-title">Gincana em quadra poliesportiva</span></figcaption>
+          </figure>
+
+          <figure class="gallery-card" data-category="eventos">
+            <button class="gallery-trigger" type="button" data-lightbox data-cat-label="Carnaval em Família" data-caption="Bloco festivo de Carnaval integrando adultos e crianças no hotel">
+              <img src="images/fotos/bloco-carnaval-hotel.jpg" alt="Grupo com abadás personalizados e duas monitoras Licere à frente" loading="lazy">
+            </button>
+            <figcaption><span class="gallery-cat">Carnaval &amp; Clubes</span><span class="gallery-title">Bloco de Carnaval com famílias</span></figcaption>
+          </figure>
+
+          <!-- Aluguel de Brinquedos -->
+          <figure class="gallery-card" data-category="brinquedos">
+            <button class="gallery-trigger" type="button" data-lightbox data-cat-label="Aluguel de Brinquedos" data-caption="Projeto completo de Espaço Kids montado no Comfort Hotel Santos">
+              <img src="images/fotos/aluguel-comfort-hotel-santos.jpg" alt="Montagem completa de Espaço Kids no Comfort Hotel Santos com brinquedos e games" loading="lazy">
+            </button>
+            <figcaption><span class="gallery-cat">Aluguel &amp; Projetos</span><span class="gallery-title">Espaço Kids — Comfort Hotel Santos</span></figcaption>
+          </figure>
+
+          <figure class="gallery-card" data-category="brinquedos">
+            <button class="gallery-trigger" type="button" data-lightbox data-cat-label="Aluguel de Brinquedos" data-caption="Combo completo: castelo pula-pula, piscina de bolinhas e gangorra">
+              <img src="images/fotos/aluguel-combo-brinquedos.jpg" alt="Piscina de bolinhas, castelo pula-pula inflável e gangorra instalados em área coberta" loading="lazy">
+            </button>
+            <figcaption><span class="gallery-cat">Aluguel de Brinquedos</span><span class="gallery-title">Combo Castelo + Bolinhas + Gangorra</span></figcaption>
+          </figure>
+
+          <figure class="gallery-card" data-category="brinquedos">
+            <button class="gallery-trigger" type="button" data-lightbox data-cat-label="Aluguel de Brinquedos" data-caption="Piscina de bolinhas colorida com rede protetora e toldo">
+              <img src="images/fotos/aluguel-piscina-bolinhas.jpg" alt="Piscina de bolinhas com toldo vermelho e verde cheia de bolinhas coloridas" loading="lazy">
+            </button>
+            <figcaption><span class="gallery-cat">Aluguel de Brinquedos</span><span class="gallery-title">Piscina de bolinhas com cobertura</span></figcaption>
+          </figure>
+
+          <figure class="gallery-card" data-category="brinquedos">
+            <button class="gallery-trigger" type="button" data-lightbox data-cat-label="Aluguel de Brinquedos" data-caption="Brinquedos infláveis integrados às dinâmicas de balão em salão de eventos">
+              <img src="images/fotos/espaco-kids-baloes.jpg" alt="Crianças brincando com bexigas diante do castelo inflável e da piscina de bolinhas" loading="lazy">
+            </button>
+            <figcaption><span class="gallery-cat">Aluguel de Brinquedos</span><span class="gallery-title">Pula-pula e piscina de bolinhas em salão</span></figcaption>
+          </figure>
+
+          <figure class="gallery-card" data-category="brinquedos">
+            <button class="gallery-trigger" type="button" data-lightbox data-cat-label="Aluguel de Brinquedos" data-caption="Cama elástica com tela e brincadeiras monitoradas para crianças">
+              <img src="images/fotos/cama-elastica-espaco-kids.jpg" alt="Crianças jogando bexigas em sala com cama elástica instalada ao fundo" loading="lazy">
+            </button>
+            <figcaption><span class="gallery-cat">Aluguel de Brinquedos</span><span class="gallery-title">Cama elástica em área kids coberta</span></figcaption>
+          </figure>
+
+          <!-- Decoração com Balões -->
+          <figure class="gallery-card" data-category="baloes">
+            <button class="gallery-trigger" type="button" data-lightbox data-cat-label="Decoração com Balões" data-caption="Colunas festivas de balões instaladas ao longo de varanda de evento">
+              <img src="images/fotos/baloes-colunas-rosa.jpg" alt="Colunas decorativas de balões em tons de rosa e pink alinhadas em varanda" loading="lazy">
+            </button>
+            <figcaption><span class="gallery-cat">Decoração com Balões</span><span class="gallery-title">Colunas de balões para festas e áreas externas</span></figcaption>
+          </figure>
+
+          <figure class="gallery-card" data-category="baloes">
+            <button class="gallery-trigger" type="button" data-lightbox data-cat-label="Decoração com Balões" data-caption="Painel de árvore de Natal HO HO HO montado em tela de balões">
+              <img src="images/fotos/baloes-painel-natal.jpg" alt="Grande painel de balões formando árvore de Natal e letras HO HO HO" loading="lazy">
+            </button>
+            <figcaption><span class="gallery-cat">Decoração com Balões</span><span class="gallery-title">Painel em tela temático de Natal</span></figcaption>
+          </figure>
+
+          <figure class="gallery-card" data-category="baloes">
+            <button class="gallery-trigger" type="button" data-lightbox data-cat-label="Decoração com Balões" data-caption="Painel em tela de balões formando capelo de formatura no auditório">
+              <img src="images/fotos/baloes-painel-formatura.jpg" alt="Mural de balões preto, amarelo, branco e vermelho com desenho de capelo de formatura" loading="lazy">
+            </button>
+            <figcaption><span class="gallery-cat">Decoração com Balões</span><span class="gallery-title">Painel artístico para formaturas</span></figcaption>
+          </figure>
+
+          <figure class="gallery-card" data-category="baloes">
+            <button class="gallery-trigger" type="button" data-lightbox data-cat-label="Decoração com Balões" data-caption="Centros de mesa personalizados com balões temáticos infantis">
+              <img src="images/fotos/baloes-patrulha-mesa.jpg" alt="Mesas decoradas com cachepôs temáticos infantis e balões vermelhos" loading="lazy">
+            </button>
+            <figcaption><span class="gallery-cat">Decoração com Balões</span><span class="gallery-title">Centros de mesa com balões temáticos</span></figcaption>
+          </figure>
+
+          <!-- Cursos & Palestras -->
+          <figure class="gallery-card" data-category="cursos">
+            <button class="gallery-trigger" type="button" data-lightbox data-cat-label="Cursos de Recreação" data-caption="Turma de formandos exibindo certificados no Curso de Recreação e Lazer em Santos">
+              <img src="images/fotos/cursos-certificacao-turma.jpg" alt="Alunos sentados e em pé exibindo certificados do Curso de Recreação Licere" loading="lazy">
+            </button>
+            <figcaption><span class="gallery-cat">Cursos Licere</span><span class="gallery-title">Entrega de certificados do Curso de Recreação</span></figcaption>
+          </figure>
+
+          <figure class="gallery-card" data-category="cursos">
+            <button class="gallery-trigger" type="button" data-lightbox data-cat-label="Cursos de Recreação" data-caption="Turma de monitores certificada fazendo o sinal de L da Licere">
+              <img src="images/fotos/cursos-turma-l-certificados.jpg" alt="Turma com camisetas verdes da Licere e certificados fazendo o L" loading="lazy">
+            </button>
+            <figcaption><span class="gallery-cat">Cursos Licere</span><span class="gallery-title">Formandos fazendo o L da Licere Recreação</span></figcaption>
+          </figure>
+
+          <figure class="gallery-card" data-category="cursos">
+            <button class="gallery-trigger" type="button" data-lightbox data-cat-label="Oficinas de Capacitação" data-caption="Oficina prática de escultura com balões para educadores e monitores">
+              <img src="images/fotos/cursos-oficina-baloes.jpg" alt="Grupo segurando espadas e flores feitas com balões em oficina da Licere" loading="lazy">
+            </button>
+            <figcaption><span class="gallery-cat">Cursos Licere</span><span class="gallery-title">Aula prática de escultura com balões</span></figcaption>
+          </figure>
+
+          <figure class="gallery-card" data-category="cursos">
+            <button class="gallery-trigger" type="button" data-lightbox data-cat-label="Treinamentos" data-caption="Equipe de viagem e treinamento prático em excursões estudantis">
+              <img src="images/fotos/cursos-equipe-hot-trip.jpg" alt="Carmen e monitores em treinamento prático de viagem estudantil Hot Trip" loading="lazy">
+            </button>
+            <figcaption><span class="gallery-cat">Treinamentos</span><span class="gallery-title">Equipe de monitoria em viagem estudantil</span></figcaption>
+          </figure>
+
+          <figure class="gallery-card" data-category="cursos">
+            <button class="gallery-trigger" type="button" data-lightbox data-cat-label="Palestras &amp; Docência" data-caption="Carmen L. Menezes ministrando palestra sobre dinâmicas e jogos de salão">
+              <img src="images/fotos/palestra-carmen-menezes.jpg" alt="Carmen Menezes falando ao microfone diante de projeção sobre brincadeiras" loading="lazy">
+            </button>
+            <figcaption><span class="gallery-cat">Palestras</span><span class="gallery-title">Palestra técnica com Carmen L. Menezes</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="colorir">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Atividade Gratuita para Imprimir</p>
+          <h2>Imagens do Golfinho Licere para Colorir</h2>
+          <p>Baixe gratuitamente os dois arquivos em PDF do acervo original do site para imprimir em casa, escolas ou eventos.</p>
+        </div>
+        <div class="coloring-grid">
+          <article class="coloring-card">
+            <div class="coloring-thumb">
+              <img src="images/brand/colorir-golfinho.png" alt="Desenho em preto e branco do mascote golfinho Licere para colorir">
+            </div>
+            <div>
+              <h3>Golfinho Licere Clássico</h3>
+              <p style="color:var(--muted); margin:6px 0 14px; font-size:14.5px;">Desenho oficial do nosso mascote acenando com sua camiseta verde pronto para impressão em folha A4.</p>
+              <a href="downloads/colorir-golfinho-licere.pdf" download="colorir-golfinho-licere.pdf" class="btn btn-primary btn-sm">Baixar PDF para imprimir</a>
+            </div>
+          </article>
+
+          <article class="coloring-card">
+            <div class="coloring-thumb">
+              <img src="images/brand/colorir-pascoa.png" alt="Desenho em preto e branco do mascote golfinho Licere em edição de Páscoa para colorir">
+            </div>
+            <div>
+              <h3>Edição Temática — Feliz Páscoa</h3>
+              <p style="color:var(--muted); margin:6px 0 14px; font-size:14.5px;">Arte especial comemorativa de Páscoa com o mascote Licere para oficinas infantis e lembranças.</p>
+              <a href="downloads/colorir-pascoa-licere.pdf" download="colorir-pascoa-licere.pdf" class="btn btn-ocean btn-sm">Baixar PDF para imprimir</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container cta-box">
+        <div>
+          <h2>Quer a Licere no seu próximo evento ou hotel?</h2>
+          <p>Fale com nossa equipe em Santos e receba uma proposta sob medida para suas datas.</p>
+        </div>
+        <div class="cta-actions">
+          <a href="contato.html" class="btn btn-light">Solicitar orçamento</a>
+          <a href="servicos.html" class="btn btn-dark">Ver serviços</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="logo">
+          <span class="logo-avatar">
+            <img src="images/logo-mascote.jpg" alt="Mascote golfinho da Licere">
+          </span>
+          <span class="logo-text">
+            <span class="logo-script">Licere</span>
+            <span class="logo-sub">Recreação &amp; Lazer</span>
+          </span>
+        </a>
+        <p>Desde 2007 levando monitoria especializada, aluguel de brinquedos, consultoria e cursos para hotéis, clubes, condomínios e eventos.</p>
+      </div>
+      <div>
+        <h4>Navegação</h4>
+        <a href="index.html">Início</a>
+        <a href="sobre.html">Quem Somos &amp; Proposta</a>
+        <a href="servicos.html">Serviços &amp; Cursos</a>
+        <a href="galeria.html">Galeria &amp; Colorir</a>
+        <a href="contato.html?aba=trabalhe">Trabalhe na Licere</a>
+      </div>
+      <div>
+        <h4>Contato · Santos/SP</h4>
+        <p>Responsável: <strong>Carmen L. Menezes</strong></p>
+        <a href="https://api.whatsapp.com/send?phone=5513981143431" target="_blank" rel="noopener noreferrer">WhatsApp: (13) 98114-3431</a>
+        <a href="tel:+551333213189">Telefone: (13) 3321-3189</a>
+        <a href="mailto:carmen.licere@yahoo.com.br">carmen.licere@yahoo.com.br</a>
+        <a href="https://www.facebook.com/licererecreacao/" target="_blank" rel="noopener noreferrer">Facebook /licererecreacao</a>
+      </div>
+    </div>
+    <div class="copy">&copy; 2007–2026 Licere Recreação e Lazer · Santos e Litoral Paulista · Todos os direitos reservados</div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightboxCaption" hidden>
+    <div class="lightbox-inner">
+      <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Fechar foto ampliada">&times;</button>
+      <div class="lightbox-media">
+        <img id="lightboxImg" alt="">
+      </div>
+      <div class="lightbox-bar">
+        <div>
+          <span class="lightbox-cat" id="lightboxCategory"></span>
+          <span class="lightbox-caption" id="lightboxCaption"></span>
+        </div>
+        <div class="lightbox-nav">
+          <button class="lightbox-btn" id="lightboxPrev" type="button" aria-label="Foto anterior">&larr; Anterior</button>
+          <button class="lightbox-btn" id="lightboxNext" type="button" aria-label="Próxima foto">Próxima &rarr;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a href="https://api.whatsapp.com/send?phone=5513981143431" target="_blank" rel="noopener noreferrer" class="wa-float" aria-label="Falar pelo WhatsApp (13) 98114-3431">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.98.58 3.91 1.67 5.56L2.02 22l4.66-1.74a9.86 9.86 0 0 0 5.36 1.56h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.78 14.08c-.24.68-1.41 1.3-1.95 1.38-.5.07-1.13.1-1.83-.12-.42-.13-.96-.31-1.65-.61-2.91-1.25-4.81-4.18-4.96-4.38-.14-.19-1.18-1.57-1.18-3 0-1.43.75-2.13 1.01-2.42.27-.29.59-.36.79-.36h.57c.18 0 .43-.07.67.51.25.6.84 2.07.92 2.22.07.15.12.32.02.52-.1.19-.15.32-.3.49-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.29.77 1.27 1.65 2.05 1.13 1.01 2.09 1.32 2.38 1.47.29.15.46.12.63-.07.17-.2.74-.86.94-1.15.2-.3.39-.25.66-.15.27.1 1.72.81 2.01.96.3.15.49.22.56.34.07.12.07.7-.17 1.38Z"/></svg>
+    <span>WhatsApp Licere</span>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
